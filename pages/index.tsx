@@ -6,7 +6,7 @@ const StyledComponentWithGlobal = styled.div`
   width: 100px;
   height: 100px;
 
-  .globalClass & :after {
+  .globalClass & ::after {
     color: white;
     display: block;
     content: "Only visible using babelrc";
@@ -19,7 +19,7 @@ const StyledComponent = styled.div`
   width: 100px;
   height: 100px;
 
-  :after {
+  ::after {
     color: white;
     display: block;
     content: "Works in both";
