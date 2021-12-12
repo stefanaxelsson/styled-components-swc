@@ -4,4 +4,12 @@ module.exports = {
   experimental: {
     styledComponents: true,
   },
+  rewrites: async () => {
+    return [
+      {
+        source: "/rewrite",
+        destination: "/",
+      },
+    ];
+  },
 };
